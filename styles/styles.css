@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body {
+	font-size: 0;
+	margin: 0 auto;
+}
+
+/*===============================================*/
+
+.c-head-menu {
+	width: 100%;
+	height: 97px;
+	background: #373c40;
+	padding-left: 54px;
+	display: flex;
+	align-items: center;
+}
+
+.c-head-menu li {
+	padding-right: 30px;
+	list-style-type: none;
+}
+
+.c-head-menu li a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+
+.c-title {
+	width: 100%;
+	height: 577px;
+	background: #0ba0b6;
+	float: left;
+}
+
+.c-title__text {
+	height: 36.4%;
+	margin: 20% 0 0 8%;
+	position: relative;
+}
+
+.c-title__text h1 {
+	font-size: 50px;
+	color: white;
+}
+
+.c-title__text p {
+	position: absolute;
+	font-size: 28px;
+	color: #a5d8db;
+	font-weight: bold;
+	bottom: 0;
+}
+
+.c-link {
+	width: 100%;
+	height: 245px;
+	background: #27212b;
+	float: left;
+}
+
+.c-link p {
+	font-size: 28px;
+	color: #92829f;
+	font-weight: bold;
+	float: left;
+	margin: 10.5% 0 0 8%;
+}
+
+.c-link__button {
+	width: 22.27%;
+	height: 100%;
+	background: url(../img/arrow.svg) #bc3184 no-repeat;
+	background-size: 38px 38px;
+	background-position: center center;
+	float: right;
+}
+
+.c-gallery {
+	width: 100%;
+	height: 295px;
+	float: left;
+	background: #5b10a1;
+}
+
+.c-gallery__item {
+	width: calc(100% / 3);
+	height: 100%;
+	float: right;
+}
+
+.c-gallery__item a {
+	display: block;
+	height: 100%;
+	background: url(../img/arrow.svg) no-repeat;
+	background-size: 38px 38px;
+	background-position: center center;
+}
+
+.c-gallery__item img {
+	height: 100%;
+}
+
+.c-text {
+	width: 100%;
+	min-height: 562px;
+	float: left;
+	background: #ebebeb;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.c-text h2 {
+	color: #0c8bab;
+	font-size: 24px;
+	position: absolute;
+	left: 80px;
+	top: 50px;
+}
+
+.c-text__block {
+	width: 460px;
+	color: #4b4b4b;
+	font-size: 14px;
+	padding: 0 30px 0 30px;
+	margin-top: 105px;
+	line-height: 1.5;
+}
+
+/*===============================================*/
+
+@media (min-width: 1024px) {
+	body {
+		width: 1024px;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1024px) {
+	body {
+		width: 980px;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 980px) {
+	body {
+		width: 640px;
+	}
+	.c-text {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 640px) {
+	body {
+		width: 320px;
+	}
+	.c-text {
+		flex-direction: column;
+		align-items: center;
+	}
+	.c-text__block {
+		width: 280px;
+		line-height: 1;
+	}
+}
